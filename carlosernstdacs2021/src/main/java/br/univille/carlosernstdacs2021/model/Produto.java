@@ -21,7 +21,7 @@ public class Produto {
     private long id;
     @Column(length = 1000)
     private String descricao;
-    private Float preco;
+    private float preco;
     
     @Temporal(value = TemporalType.DATE)
     private Date dataRegistro;
@@ -41,11 +41,23 @@ public class Produto {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    public Float getPreco() {
+    public float getPreco() {
         return preco;
     }
-    public void setPreco(Float preco) {
+    public void setPreco(float preco) {
         this.preco = preco;
+    }
+    public Date getDataRegistro() {
+        return dataRegistro;
+    }
+    public void setDataRegistro(Date dataRegistro) {
+        this.dataRegistro = dataRegistro;
+    }
+    public Categoria getCategoria() {
+        return categoria;
+    }
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
     
 
