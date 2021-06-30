@@ -5,4 +5,5 @@ import br.univille.carlosernstdacs2021.model.Produto;
 
 public interface ProdutoService {
     public List<Produto> getAllProdutos();
+    public Produto save(Produto produto);
 }
