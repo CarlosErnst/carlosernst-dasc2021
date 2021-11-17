@@ -9,9 +9,9 @@ import br.univille.carlosernstdacs2021.model.Fornecedor;
 import br.univille.carlosernstdacs2021.repository.FornecedorRepository;
 import br.univille.carlosernstdacs2021.service.FornecedorService;
 
-
 @Service
 public class FornecedorServiceImpl implements FornecedorService{
+    
     @Autowired
     private FornecedorRepository repository;
 
@@ -21,8 +21,8 @@ public class FornecedorServiceImpl implements FornecedorService{
     }
 
     @Override
-    public Fornecedor save(Fornecedor fornecedor) {
-        return repository.save(fornecedor);
+    public Fornecedor getFornecedor(long id) {
+        return repository.getById(id);
     }
     
 }
